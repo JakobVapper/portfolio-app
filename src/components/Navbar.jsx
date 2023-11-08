@@ -14,11 +14,11 @@ const Navbar = () => {
             </div>
 
             <ul className='hidden md:flex'>
-                <li className='text-white'>Home</li>
-                <li className='text-white'>About</li>
-                <li className='text-white'>Experience</li>
-                <li className='text-white'>Work</li>
-                <li className='text-white'>Contact</li>
+                <li className='text-gray-400 hover:text-white'>Home</li>
+                <li className='text-gray-400 hover:text-white'>About</li>
+                <li className='text-gray-400 hover:text-white'>Experience</li>
+                <li className='text-gray-400 hover:text-white'>Work</li>
+                <li className='text-gray-400 hover:text-white'>Contact</li>
             </ul>
 
             <div onClick={handleClick} className='md:hidden z-10'>
