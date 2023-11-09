@@ -19,7 +19,7 @@ const textVariants = {
 
 const Home = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-black pt-[80px]'>
             <div className='overflow-hidden min-h-screen lg:flex lg:flex-row lg:justify-between md:flex md:flex-col lg:px-28'>
                 <motion.div initial="initial" animate="animate" variants={textVariants} className='lg:pt-44'>
                     <motion.h2 variants={textVariants} className='bg-gradient-to-r from-indigo-600 to-fuchsia-700 bg-clip-text text-transparent text-2xl font-bold tracking-[10px]'>JAKOB VAPPER</motion.h2>
