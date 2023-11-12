@@ -35,7 +35,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className='bg-black lg:flex lg:flex-row md:flex-col'>
+        <div className='bg-black lg:flex lg:flex-row md:flex-col pb-[70px]'>
             <Lottie className='h-[600px]' animationData={Animation} />
             <motion.div initial="initial" animate={isVisible ? "animate" : "initial"} variants={textVariants} className='flex flex-col lg:max-w-[800px] place-items-center text-center'>
                 <motion.h1 variants={textVariants} className='bg-gradient-to-r from-fuchsia-700 to-indigo-600 bg-clip-text text-transparent text-7xl font-bold pt-14'>About Me</motion.h1>
