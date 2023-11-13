@@ -36,7 +36,7 @@ const Experience = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY || document.documentElement.scrollTop;
-            setIsVisible(scrollY > 100);
+            setIsVisible(scrollY > 900);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -46,12 +46,12 @@ const Experience = () => {
         };
     }, []);
     return (
-        <div>
-            <motion.div initial="initial" animate={isVisible ? "animate" : "initial"} variants={textVariants} className='bg-black flex flex-col pt-20'>
+        <div className='pt-[200px]'>
+            <motion.div initial="initial" animate={isVisible ? "animate" : "initial"} variants={textVariants} className='bg-black flex flex-col'>
             <motion.div variants={textVariants}>
                 <motion.h1 variants={textVariants} className='flex place-content-center bg-gradient-to-r from-fuchsia-700 to-indigo-600 bg-clip-text text-transparent text-7xl font-bold'>Experience</motion.h1>
             </motion.div>
-            <motion.div variants={textVariants} className='lg:grid lg:grid-cols-4 pt-14'>
+            <motion.div variants={textVariants} className='lg:grid lg:grid-cols-4 md:flex md:flex-col pt-14'>
                 <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col pb-[50px]'>
                     <motion.img variants={imageVariants} whileHover="hover" className='h-32 w-auto' src={HTML} alt="HTML picture" />
                     <motion.h2 variants={textVariants} className='text-indigo-300 text-center pt-[20px]'>HTML</motion.h2>
@@ -68,19 +68,19 @@ const Experience = () => {
                     <motion.img variants={imageVariants} whileHover="hover" className='h-32 w-auto' src={ReactJS} alt="ReactJS picture" />
                     <motion.h2 variants={textVariants} className='text-indigo-300 pt-[20px]'>React JS</motion.h2>
                 </motion.div>
-                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col'>
+                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col pb-[50px]'>
                     <motion.img variants={imageVariants} whileHover="hover" className='h-32 w-auto' src={TailwindCSS} alt="Tailwind CSS picture" />
                     <motion.h2 variants={textVariants} className='text-indigo-300 pt-[20px]'>Tailwind CSS</motion.h2>
                 </motion.div>
-                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col'>
+                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col pb-[50px]'>
                     <motion.img variants={imageVariants} whileHover="hover" className='h-32 w-auto' src={Python} alt="Python picture" />
                     <motion.h2 variants={textVariants} className='text-indigo-300 pt-[20px]'>Python</motion.h2>
                 </motion.div>
-                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col'>
+                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col pb-[50px]'>
                     <motion.img variants={imageVariants} whileHover="hover" className='h-32 w-auto' src={PHP} alt="PHP picture" />
                     <motion.h2 variants={textVariants} className='text-indigo-300 pt-[20px]'>PHP</motion.h2>
                 </motion.div>
-                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col'>
+                <motion.div variants={textVariants} className='h-auto flex items-center justify-center flex-col pb-[50px]'>
                     <motion.img variants={imageVariants} whileHover="hover" className='h-32 w-auto'  src={MySQL} alt="MySQL picture" />
                     <motion.h2 variants={textVariants} className='text-indigo-300 pt-[20px]'>MySQL</motion.h2>
                 </motion.div>
