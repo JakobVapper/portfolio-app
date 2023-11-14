@@ -46,7 +46,7 @@ const Experience = () => {
         };
     }, []);
     return (
-        <div className='pt-[200px]'>
+        <div className='pt-[200px]' id='Experience'>
             <motion.div initial="initial" animate={isVisible ? "animate" : "initial"} variants={textVariants} className='bg-black flex flex-col'>
             <motion.div variants={textVariants}>
                 <motion.h1 variants={textVariants} className='flex place-content-center bg-gradient-to-r from-fuchsia-700 to-indigo-600 bg-clip-text text-transparent text-7xl font-bold'>Experience</motion.h1>

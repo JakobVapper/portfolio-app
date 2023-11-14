@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Logo from '../media/logo.png'
 import Burger from '../media/Burger.png'
 import Cross from '../media/Cross.png'
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
     const [nav,setNav] = useState(false)
@@ -13,12 +14,12 @@ const Navbar = () => {
                 <img src={Logo} alt="Website logo" style={{width: '50px'}} />
             </div>
 
-            <ul className='hidden md:flex'>
-                <li className='text-gray-400 hover:text-white'>Home</li>
-                <li className='text-gray-400 hover:text-white'>About</li>
-                <li className='text-gray-400 hover:text-white'>Experience</li>
-                <li className='text-gray-400 hover:text-white'>Work</li>
-                <li className='text-gray-400 hover:text-white'>Contact</li>
+            <ul className='hidden md:flex gap-[20px]'>
+                <Link to="Home" spy={true} smooth={true} offset={50} duration={500} className='text-gray-400 hover:text-white'>Home</Link>
+                <Link to="About" spy={true} smooth={true} offset={50} duration={500} className='text-gray-400 hover:text-white'>About</Link>
+                <Link to="Experience" spy={true} smooth={true} offset={50} duration={500} className='text-gray-400 hover:text-white'>Experience</Link>
+                <Link to="Work" spy={true} smooth={true} offset={50} duration={500} className='text-gray-400 hover:text-white'>Work</Link>
+                <Link to="Contact" spy={true} smooth={true} offset={50} duration={500} className='text-gray-400 hover:text-white'>Contact</Link>
             </ul>
 
             <div onClick={handleClick} className='md:hidden z-10'>
