@@ -30,7 +30,7 @@ const Home = () => {
                         <Link to="Contact" spy={true} smooth={true} offset={50} duration={500}><motion.button variants={textVariants} className='border-white border-2 rounded-md text-white w-40 h-8 hover:bg-white hover:text-black'>Contact Me</motion.button></Link>
                     </motion.div>
                 </motion.div>
-                <div className='flex place-content-end top-0'>
+                <div className='flex lg:place-content-end top-0'>
                     <img className='lg:h-[85vh] md:h-14' src={Portrait} alt="Portrait" />
                 </div>
             </div>

@@ -24,7 +24,7 @@ const About = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY || document.documentElement.scrollTop;
-            setIsVisible(scrollY > 100);
+            setIsVisible(scrollY > 400);
         };
 
         window.addEventListener('scroll', handleScroll);
