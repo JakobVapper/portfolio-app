@@ -35,7 +35,7 @@ const Work = () => {
         };
     }, []);
     return (
-        <motion.div id='Work' initial="initial" animate={isVisible ? "animate" : "initial"} variants={textVariants} className='pt-[200px] flex flex-col place-content-center'>
+        <motion.div id='Work' initial="initial" animate={isVisible ? "animate" : "initial"} variants={textVariants} className='pt-[200px] lg:px-[100px] flex flex-col place-content-center'>
             <motion.h1 variants={textVariants} className='flex place-content-center bg-gradient-to-r from-fuchsia-700 to-indigo-600 bg-clip-text text-transparent text-7xl font-bold'>Work</motion.h1>
             <motion.h2 variants={textVariants} className='flex place-content-center bg-gradient-to-r from-indigo-600 to-fuchsia-700 bg-clip-text uppercase text-transparent text-2xl font-bold tracking-[10px] pt-[10px]'>My Recent Works</motion.h2>
             <div className='lg:flex lg:flex-row md:flex md:flex-col place-content-center gap-10 pt-[80px]'>
