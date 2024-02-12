@@ -35,7 +35,7 @@ const Contact = () => {
     }, []);
     return (
         <div id='Contact' className='lg:flex md:flex lg:flex-row md:flex-col lg:px-[100px] pt-[200px]'>
-            <div className='w-full bg-black flex place-content-start md:px-[20px] lg:px-[100px] items-center p-4'>
+            <div className='w-full bg-black flex md:px-[20px] lg:px-[100px] p-4'>
                 <form method='POST' action='https://getform.io/f/3444e802-9dac-4638-949a-8fd86ed56d34' className='flex flex-col max-w-[600px] w-full'>
                     <motion.div initial="initial" animate={isVisible ? "animate" : "initial"} variants={textVariants} className='pb-8'>
                         <motion.h1 className='flex place-content-center bg-gradient-to-r from-fuchsia-700 to-indigo-600 bg-clip-text text-transparent text-7xl font-bold'>Contact</motion.h1>    
